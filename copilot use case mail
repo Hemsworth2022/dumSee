@@ -1,0 +1,35 @@
+Subject: Let’s Pilot GitHub Copilot and See the Impact 🚀
+
+Hi Team,
+
+I’d like to share something exciting. Another team recently experimented with GitHub Copilot during their sprint and saw noticeable productivity gains. Copilot helped them cut down repetitive coding effort and even suggested smarter ways to approach problems.
+
+👉 Why this matters for us
+This is a great opportunity for us to see how Copilot can support our own development activities, reduce manual effort, and free up time for higher-value work.
+
+👉 What I’d like you to do
+In your upcoming sprint:
+
+Try Copilot on 2–3 tickets (small or medium-sized stories are perfect).
+
+Use it for things like test case generation, data transformations, parsing logic, configs, or any boilerplate code.
+
+Let Copilot suggest alternative logic or help with unit test coverage.
+
+Keep a note of where it saved time or gave you useful suggestions.
+
+👉 After the sprint
+Please share:
+
+Where Copilot helped
+
+Approximate time saved
+
+Any challenges or gaps
+
+This will give us a clear view of how much value Copilot can bring in our context, and together we can decide how best to adopt it more widely.
+
+Let’s make this a learning experiment and see what difference Copilot can make for us.
+
+Thanks,
+[Your Name]
