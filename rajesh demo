@@ -1,0 +1,76 @@
+
+Introduction: Good [morning/afternoon], everyone. Today, I am excited to 
+I am going to walk you through the progress we've made on our Ul screens the solutions we are building to enhance proactive application management. I'll also highlight some key features, such as the Smoke Dete functionality, onboarding workflows, and the metrics we are tracking to ensure consistent performance monitoring.
+
+1. Smoke Detector Overview
+
+Let's start with the Smoke Detector feature.
+
+The Smoke Detector is designed to act as an automated, proactive observation tool for KPI trends such as Throughput, Latency, and error Rate. Its primary goal is to identify outliers and early indicators of potential issues.
+
+
+For example, it can detect deviations in average response times, trends of threshold breaches, or consistent delays in batch SLA/SLo
+
+Once these anomalies are detected, the system sends out alerts to the respective application teams.
+
+This allows teams to shift left-moving from reactive application maintenance to proactive application management. While we are ok with occasional false alarms, the focus is on identifying spikes or unusual patterns,.
+
+
+2. Addressing Uptrends and Patterns
+Initially
+We've also made some adjustments to focus on uptrends and patterns rather than solely detecting anomalies based on SLAS, SLOs, or metadata.
+
+For instance, we are working on a solution to identify performance degradation consistency.
+Imagine the average response time of a service gradually increasing at a steady angle, say 30 degrees. While this may not immediately breach thresholds, it indicates a regular uptrend that signals potential performance degradation.
+This approach ensures we are not just reacting to anomalies but also proactively identifying trends that could impact long-term performance
+
+3. Onboarding Workflow
+
+Next, let's talk about the Onboarding Workflow.
+
+We've streamlined the process for onboarding new AlTs (Application Integration Teams):
+
+1. Teams integrate with the metrics data pipeline and push performance metrics to the central database.
+2. Once the data is ingested, the service, API, or batch job metadata is automatically populated in the onboarding Ul.
+3. App owners or their delegates can then review and update this metadata to complete the onboarding process.
+This workflow ensures a seamless and efficient onboarding experience for new teams.
+
+
+4. Metrics Tracked
+
+We are currently tracking three key metrics:
+
+Throughput: This measures data volume or request rate (TPS).
+
+1. Service Name: The name of the service being monitored.
+2. Operation Name: The specific operation or API endpoint within the service.
+3. Avg Volume (M): The average data volume processed by the service, measured in millions.
+4. SLA (M): The Service Level Agreement-this defines the expected data volume the service should handle, along with the consequences for failing to meet this metric.
+5. SLO (M): The Service Level Objective this is the measurable target set by the service provider to ensure compliance with the SLA
+6. Avg (TPS): The average number of transactions per second (TPS) handled by the service.
+7. SLA (TPS): The expected TPS as per the SLA.
+8. SLO (TPS): The measurable TPS target set by the service provider to meet the SLA.
+9. Monitor For Last X Days: The time window (in days) over which the throughput is being monitored.
+10. Threshold Violations: The number of times the throughput fell below the agreed SLA or SLO thresholds during the monitoring period.
+11. Impact Description: A brief description of the impact caused by threshold violations, such as reduced data processing capacity or delayed transactions.
+
+Latency: This tracks response times.
+1. Service Name: The name of the service being monitored.
+2. Operation Name: The specific operation or API endpoint within the service.
+3. Average (ms): The average response time for the operation, measured in milliseconds.
+4. SLA (ms): The Service Level Agreement this is the agreement between the service provider and the customer that outlines the expected response time. It also defines the consequences of failing to meet this metric.
+5. SLO (ms): The Service Level Objective this is the measurable target set by the service provider to ensure compliance with the SLA.
+6. Monitor For Last X Days: The time window (in days) over which the latency is being monitored.
+7. Agreed Threshold Violations. The number of times the latency exceeded the agreed SLA or SLO thresholds during the monitoring period.
+8. Impact Description: A brief description of the impact caused by threshold violations, such as degraded user experience or delayed batch processing.
+
+Error Rate: This monitors failure or error counts.
+These metrics provide a comprehensive view of application performance and help us identify areas for improvement.
+
+5. Smoke Detector for Delivery Metrics
+
+In addition to application performance, we've extended the Smoke Detector functionality to monitor delivery metrics.
+This includes proactive monitoring of software delivery metrics, such as the number of open issues in tools like SONAR Scan, ADSF, and Checkmarks after a production release.
+If there's an increase in open issues, the system will send out insights and alerts to the relevant teams, enabling them to address these issues early.
+Conclusion: In summary, the solutions we are building-such as the Smoke Detector, onboarding workflows, and delivery metrics monitoring -are designed to provide proactive insights and ensure consistent application performance. These tools will empower teams to identify and address issues early, ultimately improving the reliability and efficiency of our systems.
+
